@@ -1,71 +1,48 @@
-'use strict';
+"use strict";
 
-let username = prompt('What is your name?');
+// Function to start the guessing game
+function startGame() {
+    let userName = prompt("Welcome! What's your name?");
+    
+    // Prompt until a name is provided or 'STOP' is entered to exit
+    while (!userName) {
+        userName = prompt("I require a name to begin. To skip this game, type 'STOP' and click 'OK'.");
+    }
 
-while (!username) {
-  username = prompt('I require a name to begin.  To skip this game type: `STOP` and click `OK`');
+    if (userName.toUpperCase() === 'STOP') {
+        alert('Refresh the page to play again!');
+        return;
+    }
+
+    alert(`Hello, ${userName}! Let's play a guessing game to learn more about me.`);
+
+    // Array of questions and expected answers
+    const questions = [
+        { question: "Is my name Paul?", answer: "yes" },
+        { question: "Am I a human being?", answer: "yes" },
+        { question: "Do I live on the planet Earth?", answer: "yes" },
+        { question: "Is the Earth flat?", answer: "no" },
+        { question: "Do pigs fly?", answer: "no" },
+        { question: "Am I a Navy Veteran?", answer: "yes" },
+        { question: "Do I love coding?", answer: "yes" },
+        { question: "Have I traveled to over 10 countries?", answer: "no" },
+        { question: "Is my favorite programming language JavaScript?", answer: "yes" },
+        { question: "Do I have a pet?", answer: "yes" }
+    ];
+
+    // Loop through the questions and validate answers
+    questions.forEach(q => {
+        let userResponse = prompt(q.question).toLowerCase();
+        
+        if (userResponse === q.answer || userResponse[0] === q.answer[0]) {
+            alert("Correct!");
+        } else {
+            alert("Oops, that's incorrect.");
+        }
+    });
+
+    alert(`Thank you for playing, ${userName}! I hope you learned something new about me!`);
 }
 
-if (username !== 'STOP') {
-  alert('Welcome ' + username + ', lets play a guessing game.');
-
-  let questionOne = 'Is my name Paul?';
-  let responseOne = prompt(questionOne).toLowerCase();
-
-  if (responseOne === 'yes' || responseOne === 'y') {
-    // console.log('The user is correct', response);
-    alert('You are correct');
-  } else {
-    // console.log('The user is incorrect', response);
-    alert('Sorry, that\'s incorrect');
-  }
-
-  let questionTwo = 'Am I a human being?';
-  let responseTwo = prompt(questionTwo).toLowerCase();
-
-  if (responseTwo === 'yes' || responseTwo === 'y') {
-    // console.log('The user is correct', response);
-    alert('You are correct');
-  } else {
-    // console.log('The user is incorrect', response);
-    alert('Sorry, that\'s incorrect');
-  }
-
-
-  let questionThree = 'Do I live on the planet Earth?';
-  let responseThree = prompt(questionThree).toLowerCase();
-
-  if (responseThree === 'yes' || responseThree === 'y') {
-    // console.log('The user is correct', response);
-    alert('You are correct');
-  } else {
-    // console.log('The user is incorrect', response);
-    alert('Sorry, that\'s incorrect');
-  }
-
-  let questionFour = 'Is the Earth flat?';
-  let responseFour = prompt(questionFour).toLowerCase();
-
-  if (responseFour === 'no' || responseFour === 'n') {
-    // console.log('The user is correct', response);
-    alert('You are correct');
-  } else {
-    // console.log('The user is incorrect', response);
-    alert('Sorry, that\'s incorrect');
-  }
-
-  let questionFive = 'Do pigs fly?';
-  let responseFive = prompt(questionFive).toLowerCase();
-
-  if (responseFive === 'no' || responseFive === 'n') {
-    // console.log('The user is correct', response);
-    alert('You are correct');
-  } else {
-    // console.log('The user is incorrect', response);
-    alert('Sorry, that\'s incorrect');
-  }
-
-  alert('Thanks for playing ' + username);
-} else {
-  alert('Refresh the page to play!');
-}
+// Start game immediately
+startGame();
