@@ -1,0 +1,54 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark text for contrast */
+}
+
+/* Header styling */
+header {
+  background: #35424a; /* Darker background for the header */
+  color: #ffffff; /* White text in the header */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main content styling */
+main {
+  max-width: 800px; /* Limit the width of the main content */
+  margin: 20px auto; /* Center align the main content */
+  padding: 20px;
+  background: #ffffff; /* White background for main content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section styling */
+section {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+h2 {
+  color: #35424a; /* Darker color for section headings */
+  border-bottom: 2px solid #e8491d; /* Underline the headings */
+  padding-bottom: 5px;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #35424a; /* Same as header */
+  color: #ffffff; /* White text */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
