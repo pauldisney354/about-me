@@ -9,13 +9,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4; /* Light gray background */
-  color: #333; /* Dark text for contrast */
+  background-color: #e6eaf2; /* Light navy gray background */
+  color: #1a1f36; /* Dark navy for text */
 }
 
 /* Header styling */
 header {
-  background: #35424a; /* Darker background for the header */
+  background: #002855; /* Navy blue for the header */
   color: #ffffff; /* White text in the header */
   padding: 20px;
   text-align: center;
@@ -37,8 +37,8 @@ section {
 }
 
 h2 {
-  color: #35424a; /* Darker color for section headings */
-  border-bottom: 2px solid #e8491d; /* Underline the headings */
+  color: #002855; /* Navy blue for section headings */
+  border-bottom: 2px solid #c8102e; /* Red underline for emphasis */
   padding-bottom: 5px;
 }
 
@@ -46,7 +46,7 @@ h2 {
 footer {
   text-align: center;
   padding: 10px 0;
-  background: #35424a; /* Same as header */
+  background: #002855; /* Same as header */
   color: #ffffff; /* White text */
   position: relative;
   bottom: 0;

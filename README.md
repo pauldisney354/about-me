@@ -2,21 +2,14 @@
 
 ## about-me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+I built an interactive "About Me" webpage that introduces who I am and includes a fun guessing game. The page includes my biography, education history, job experience, and personal goals, creating an engaging way for visitors to get to know me and my background in web development.
 
 ### Author: Paul/Shawn De Paul
 
-### Links and Resources
-
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
-
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
-```
+Through this project, I applied HTML structure principles and explored using CSS for styling. JavaScript will help personalize the page further by adding a custom greeting. Developing this project highlighted the importance of accessibility and structured content.
