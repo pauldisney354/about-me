@@ -67,7 +67,7 @@ This project is an interactive "About Me" webpage designed to engage users with 
 * Code Fellows instructors and peers for guidance on JavaScript and accessibility.
 * Online resources and documentation for JavaScript best practices.
 
-Qilin was Driver on: 
+Qilin was Driver on: https://github.com/pauldisney354/about-me/pull/1
 
 <!-- changes : function askYesNoQuestion(question, correctAnswer){
   let response = prompt(question).toLowerCase();
