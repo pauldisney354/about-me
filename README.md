@@ -66,3 +66,25 @@ This project is an interactive "About Me" webpage designed to engage users with 
 
 * Code Fellows instructors and peers for guidance on JavaScript and accessibility.
 * Online resources and documentation for JavaScript best practices.
+
+Qilin was Driver on: 
+
+<!-- changes : function askYesNoQuestion(question, correctAnswer){
+  let response = prompt(question).toLowerCase();
+  if (response === null){
+    alert("game cancelled.")
+    return;
+  }
+
+  if (response === "yes" || response === "y") {
+    alert(`Correct! ${correctAnswer}`);
+    score++;
+  } else {
+    alert(`actually,${correctAnswer}`);
+  }
+}
+
+function yesNoQuestions() {
+  askYesNoQuestion("Am I a software developer?", "I do live in Silverton.");
+  askYesNoQuestion("")
+} -->
